@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <TextView
+        android:id="@+id/forumTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Forums"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:layout_margin="20dp"
+        android:textStyle="bold"/>
+
+    <ListView
+        android:id="@+id/forumsList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+    </ListView>
+
+
+    <Button
+        android:id="@+id/newTopic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Create a new Topic"
+        android:layout_margin="10dp"/>
+
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mapps.attendancemanager.QuestionView">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/subject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/Black"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:textColor="@color/Black"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:padding="10dp"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Comment Thread"
+            android:textSize="16sp"
+            android:textStyle="italic" />
+
+        <ListView
+            android:id="@+id/CommentsList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </ListView>
+
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/comment"
+        android:hint="Type here."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#ffffff"
+        android:layout_above="@+id/submitcomment"/>
+
+    <Button
+        android:id="@+id/submitcomment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>
